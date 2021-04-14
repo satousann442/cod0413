@@ -5,37 +5,45 @@ button{
     background:none;
 }
 
-header{
-    background: url(../img/22.png) no-repeat top right ;
-    background-size: cover;
-    height: 70vh;
-}
-
-.headerpd{
-    position: relative;
-    position: absolute;
-    top: 595px;
-    left: 121px;
-}
-
-.headerpd button{
+button:hover{
+    opacity:0.5;
     width: 612px;
     height: 85px;
 }
 
+/* header */
+
+header h2{
+    background: url(../img/500_F_301780181_IoiYryTm6HXdXJOiwwZzdsATXNZPFHwN.png) no-repeat top right ;
+    background-size: contain;
+    height:80vh;
+    position: relative;
+}
+
+.header-pd{
+    position:absolute;
+    top: 595px;
+    left: 121px;
+}
+
+/* future */
+
 #future{
     background-color: #FCF8EC;
     background-size:contain;
-    height: 522px;
 }
 
 .future-pd{
     display:flex;
+    position: relative;
 }
 
 .left-future img{
+    position: absolute;
+    top: 30px;
+    left: -50px;
     width: 330px;
-    height: 490px;
+    height: auto;
 }
 
 .right-future{
@@ -48,40 +56,33 @@ h2.future{
     padding-bottom:32.43px
 }
 
+/* you */
+
 #you{
     background:url(../img/3919241_l.png)  no-repeat bottom center;
     background-size: cover;
     padding-bottom: 54px;
 }
 
-p.you{
+h2.you{
     padding-top:57px;
-}
-
-.you-text-1 p{
     text-align: center;
     color:#000000;
     font: normal normal bold 29px/39px Source Han Sans JP;
 }
 
-.you-text-2{
+p.you-text-2{
     padding-top:12px;
     width: 1088px;
-}
-
-.you-text-2{
     text-align: center;
     font: normal normal bold 53px/71px Source Han Sans JP;
     letter-spacing: 0px;
     color: #000000;
 }
 
-.you-text-3{
+p.you-text-3{
     padding-top:32px;
     padding-bottom:73px;
-}
-
-.you-text-3{
     text-align: center;
     font: normal normal bold 18px/27px Source Han Sans JP;
     letter-spacing: 0px;
@@ -93,7 +94,20 @@ p.you{
 }
 
 .you-area{
+    padding-top: 28px;
     background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+}
+
+.col-you{
+    flex-basis: 30%;
+}
+
+.col-you img{
+    width: 358px;
+    height: 215px;
+    object-fit: cover;
 }
 
 .main-text-2-1{
@@ -114,7 +128,7 @@ p.you{
     padding-bottom: 15px;
 }
 
-.main-text-2-3{
+p.main-text-2-3{
     text-align: left;
     font: normal normal bold 14px/22px Source Han Sans JP;
     letter-spacing: 0px;
@@ -140,7 +154,7 @@ p.you{
     padding-bottom: 15px;
 }
 
-.main-text-2-6{
+p.main-text-2-6{
     text-align: left;
     font: normal normal bold 14px/22px Source Han Sans JP;
     letter-spacing: 0px;
@@ -166,13 +180,15 @@ p.you{
     padding-bottom: 15px;
 }
 
-.main-text-2-9{
+p.main-text-2-9{
     text-align: left;
     font: normal normal bold 14px/22px Source Han Sans JP;
     letter-spacing: 0px;
     color: #000000;
     font-size:14px;
 }
+
+/* hatena */
 
 #hatena{
     background-color:#F9DCD6;
@@ -183,9 +199,23 @@ p.you{
     height: 480px;
 }
 
+.left-hatena{
+    position:relative;
+    flex-basis:70%;
+}
+
 h2 .left-hatena{
     padding-top: 63.44px;
     padding-bottom:41px;
+
+}
+
+.hatena-2{
+    position: absolute;
+    width: 847px;
+    height: 305px;
+    top: 140px;
+    left: -60px;
 }
 
 .right-hatena img{
@@ -193,14 +223,18 @@ h2 .left-hatena{
     height: 568px;
 }
 
+/* midasi */
+
 #midasi-1{
     height: 88px;
 }
 
+/* serch */
+
 #serch{
     background:url(../img/3211241_l.png) no-repeat bottom;
     background-size:cover;
-    height: 1094px;
+    height: 1194px;
 }
 
 .serch-text-1{
@@ -227,23 +261,45 @@ h2 .left-hatena{
     padding-top: 32px;
 }
 
+.rbox{
+    margin-top:17px;
+}
+
+.circle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 370px;
+    height: 370px;
+    margin:0 auto;
+}
+
+/* ex */
+
 #ex{
     background-color: #FCF8EC;
     height: 406px;
 }
 
 .ex-pd{
-    display: flex;
+    position: relative;
 }
 
-.left-ex{
-    padding-top:67.33px;
+.col-size1 img{
+    width: 351px;
+    height: 176px;
 }
 
-.right-ex img{
-    width: 443px;
-    height: 445px;
+.col-size2 img{
+    position: absolute;
+    flex-basis:70%;
+    top: -170px;
+    left: 400px;
+    width: 400px;
+    height: auto;
 }
+
+/* start */
 
 #start{
     background-color: #F9DCD6;
@@ -279,6 +335,8 @@ h2.start{
     padding-bottom: 49.6px;
 }
 
+/* prime */
+
 h2.prime{
     text-align: center;
     font: normal normal bold 45px/74px Source Han Sans JP;
@@ -294,10 +352,12 @@ h2.prime{
 .prime-text img{
     text-align: center;
     width: 1083px;
-    height: 381px;
+    height: auto;
     padding-top: 32px;
     padding-bottom: 70px;
 }
+
+/* faq */
 
 #faq{
     background-color: #FCF8EC;
@@ -368,14 +428,19 @@ h2.access{
 
 p.access-box-2{
     border-top: 1px solid #000000;
-    border-bottom: 1px solid #000000;
     padding-top:15px;
-    padding-bottom: 15px;
     text-align: left;
     font: normal normal bold 15px/31px Source Han Sans JP;
     letter-spacing: 0px;
     color: #000000;
 }
+
+p.access-box-2:last-child{
+    border-bottom: 1px solid #000000;
+    padding-bottom: 15px;
+}
+
+/* midasi */
 
 #midasi-3 img{
     margin-top: 39px;
